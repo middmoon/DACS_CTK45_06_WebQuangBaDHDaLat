@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="./src/Thang/2111886.css" />
+        <title>Bản đồ trường Đại học Đà Lạt</title>
+    </head>
+    <body>
+        <button id="closeButton" onclick="goBack()"><i class="fas fa-times"></i></button>
+        <div class="container">
+            <div class="firsttime-panel">
+                <img src="./assets/Thang/map_dlu(1)-transformed (1).jpeg" alt="" usemap="#dalat-map1" />
+                <map name="dalat-map1">
+                    <area shape="rect" coords="442,49,897,135" name="Hodaihoc" onclick="createSlideshowDiv('Hodaihoc')" href="#Hodaihoc" />
+                    <div class="tooltip">Nhấn vào để hiện thị ảnh</div>
+                    <area shape="rect" coords="280,161,508,220" name="A31" onclick="createSlideshowDiv('A31')" href="#A31" />
+                    <area shape="rect" coords="142,198,248,218" name="baovesau" onclick="createSlideshowDiv('Baovesau')" href="#Baovesau" />
+                    <area shape="rect" coords="238,291,369,354" name="A25" onclick="createSlideshowDiv('A25')" href="#A25" />
+                    <area shape="rect" coords="70,283,144,370" name="A30" onclick="createSlideshowDiv('A30')" href="#A30" />
+                    <area shape="rect" coords="60,402,166,490" name="A27" onclick="createSlideshowDiv('A27')" href="#A27" />
+                    <area shape="rect" coords="194,417,261,449" name="A5" onclick="createSlideshowDiv('A5')" href="#A5" />
+                    <area shape="rect" coords="162,506,263,542" name="A4" onclick="createSlideshowDiv('A4')" href="#A4" />
+                    <area shape="rect" coords="322,421,426,439" name="TV" onclick="createSlideshowDiv('TV')" href="#TV" />
+                    <area shape="rect" coords="270,468,398,492" name="A3" onclick="createSlideshowDiv('A3')" href="#A3" />
+                    <area shape="rect" coords="303,561,454,596" name="A1" onclick="createSlideshowDiv('A1')" href="#A1" />
+                    <area shape="rect" coords="482,622,557,659" name="baovetruoc" onclick="createSlideshowDiv('Baovetruoc')" href="#Baovetruoc" />
+                    <area shape="rect" coords="566,598,682,691" name="nhaxe" onclick="createSlideshowDiv('Nhagiuxe')" href="#Nhagiuxe" />
+                    <area shape="rect" coords="474,505,518,559" name="A2" onclick="createSlideshowDiv('A2')" href="#A2" />
+                    <area shape="rect" coords="637,522,693,559" name="Sk" onclick="createSlideshowDiv('SK')" href="#SK" />
+                    <area shape="rect" coords="485,409,569,433" name="HTTN" onclick="createSlideshowDiv('HTTN')" href="#HTTN" />
+                    <area shape="rect" coords="462,302,526,350" name="A24" onclick="createSlideshowDiv('A24')" href="#A24" />
+                    <area shape="rect" coords="478,242,673,301" name="TT-TV" onclick="createSlideshowDiv('TTTT_TV')" href="#TTTT_TV" />
+                    <area shape="rect" coords="696,292,774,334" name="A21" onclick="createSlideshowDiv('A21')" href="#A21" />
+                    <area shape="rect" coords="676,381,738,399" name="A6" onclick="createSlideshowDiv('A6')" href="#A6" />
+                    <area shape="rect" coords="791,254,891,302" name="A19" onclick="createSlideshowDiv('A19')" href="#A19" />
+                    <area shape="rect" coords="815,346,934,335" name="A18" onclick="createSlideshowDiv('A18')" href="#A18" />
+                    <area shape="rect" coords="929,395,1067,393" name="A7" onclick="createSlideshowDiv('A7')" href="#A7" />
+                    <area shape="rect" coords="984,434,1150,458" name="A8" onclick="createSlideshowDiv('A8')" href="#A8" />
+                    <area shape="rect" coords="965,280,1053,323" name="A16" onclick="createSlideshowDiv('A16')" href="#A16" />
+                    <area shape="rect" coords="883,202,1043,236" name="A20" onclick="createSlideshowDiv('A20')" href="#A20" />
+                    <area shape="rect" coords="1060,174,1240,246" name="SanBD" onclick="createSlideshowDiv('Sanbongda')" href="#Sanbongda" />
+                    <area shape="rect" coords="1170,283,1367,361" name="NhaTD" onclick="createSlideshowDiv('Nhathidau')" href="#Nhathidau" />
+                    <area shape="rect" coords="1153,393,1318,459" name="A11" onclick="createSlideshowDiv('A11')" href="#A11" />
+                </map>
+            </div>
+            <div class="map-panel hidden">
+                <div class="image-container">
+                    <img src="./assets/Thang/map_dlu(1).jpg" alt="Dalat University Map" usemap="#dalat-map" />
+                </div>
+                <map name="dalat-map">
+                    <area shape="rect" coords="219,43,436,126" onclick="createSlideshowDiv('Hodaihoc')" alt="Hồ Đại học" href="#Hodaihoc" />
+                    <area shape="rect" coords="149,161,243,215" onclick="createSlideshowDiv('A31')" alt="Tòa A31" href="#A31" />
+                    <area shape="rect" coords="67,191,117,220" onclick="createSlideshowDiv('Baovesau')" alt="Nhà bảo vệ cổng sau" href="#Baovesau" />
+                    <area shape="poly" coords="242,242,331,218,339,298,247,291" onclick="createSlideshowDiv('TTTT_TV')" alt="Trung tâm TT-TV" href="#TTTT_TV" />
+                    <area shape="rect" coords="347,294,393,335" onclick="createSlideshowDiv('A21')" alt="Tòa A21" href="#A21" />
+                    <area shape="rect" coords="230,302,267,351" onclick="createSlideshowDiv('A24')" alt="Tòa A24" href="#A24" />
+                    <area shape="rect" coords="106,285,200,371" onclick="createSlideshowDiv('A25')" alt="Tòa A25" href="#A25" />
+                    <area shape="rect" coords="341,390,366,398" onclick="createSlideshowDiv('A6')" alt="Tòa A6" href="#A6" />
+                    <area shape="rect" coords="243,417,289,434" onclick="createSlideshowDiv('HTTN')" alt="Tòa HTTN" href="#HTTN" />
+                    <area shape="rect" coords="160,428,214,438" onclick="createSlideshowDiv('TV')" alt="Tòa TV" href="#TV" />
+                    <area shape="rect" coords="38,289,71,370" onclick="createSlideshowDiv('A30')" alt="Tòa A30" href="#A30" />
+                    <area shape="rect" coords="22,403,79,490" onclick="createSlideshowDiv('A27')" alt="Tòa A27" href="#A27" />
+                    <area shape="rect" coords="95,420,131,441" onclick="createSlideshowDiv('A5')" alt="Tòa A5" href="#A5" />
+                    <area shape="rect" coords="142,470,201,494" onclick="createSlideshowDiv('A3')" alt="Tòa A3" href="#A3" />
+                    <area shape="rect" coords="60,515,126,540" onclick="createSlideshowDiv('A4')" alt="Tòa A4" href="#A4" />
+                    <area shape="rect" coords="155,578,223,598" onclick="createSlideshowDiv('A1')" alt="Tòa A1" href="#A1" />
+                    <area shape="rect" coords="235,514,258,558" onclick="createSlideshowDiv('A2')" alt="Tòa A2" href="#A2" />
+                    <area shape="rect" coords="218,642,282,654" onclick="createSlideshowDiv('Baovetruoc')" alt="Bảo vệ cổng trước" href="#Baovetruoc" />
+                    <area shape="rect" coords="276,669,350,692" onclick="createSlideshowDiv('Nhagiuxe')" alt="Nhà giữ xe" href="#Nhagiuxe" />
+                    <area shape="rect" coords="314,515,343,561" onclick="createSlideshowDiv('SK')" alt="Khu vực sự kiện" href="#SK" />
+                    <area shape="rect" coords="485,442,575,467" onclick="createSlideshowDiv('A8')" alt="Tòa A8" href="#A8" />
+                    <area shape="rect" coords="461,399,540,401" onclick="createSlideshowDiv('A7')" alt="Tòa A7" href="#A7" />
+                    <area shape="rect" coords="402,342,471,350" onclick="createSlideshowDiv('A18')" alt="Tòa A18" href="#A18" />
+                    <area shape="rect" coords="391,265,447,303" onclick="createSlideshowDiv('A19')" alt="Tòa A19" href="#A19" />
+                    <area shape="rect" coords="439,207,521,244" onclick="createSlideshowDiv('A20')" alt="Tòa A20" href="#A20" />
+                    <area shape="rect" coords="524,172,617,254" onclick="createSlideshowDiv('Sanbongda')" alt="Sân bóng đá" href="#Sanbongda" />
+                    <area shape="rect" coords="589,289,687,358" onclick="createSlideshowDiv('Nhathidau')" alt="Nhà thi đấu" href="#Nhathidau" />
+                    <area shape="rect" coords="476,289,532,323" onclick="createSlideshowDiv('A16')" alt="Tòa A16" href="#A16" />
+                    <area shape="rect" coords="572,406,651,438" onclick="createSlideshowDiv('A11')" alt="Tòa A11" href="#A11" />
+                </map>
+            </div>
+            <div class="building-panel hidden">
+                <div id="Hodaihoc" class="building-info"></div>
+                <div id="A31" class="building-info"></div>
+                <div id="Baovesau" class="building-info"></div>
+                <div id="Baovetruoc" class="building-info"></div>
+                <div id="Nhagiuxe" class="building-info"></div>
+                <div id="A1" class="building-info"></div>
+                <div id="A2" class="building-info"></div>
+                <div id="A3" class="building-info"></div>
+                <div id="A4" class="building-info"></div>
+                <div id="A5" class="building-info"></div>
+                <div id="A6" class="building-info"></div>
+                <div id="A7" class="building-info"></div>
+                <div id="A8" class="building-info"></div>
+                <div id="A9" class="building-info"></div>
+                <div id="A11" class="building-info"></div>
+                <div id="Nhathidau" class="building-info"></div>
+                <div id="Sanbongda" class="building-info"></div>
+                <div id="A20" class="building-info"></div>
+                <div id="A16" class="building-info"></div>
+                <div id="A18" class="building-info"></div>
+                <div id="A19" class="building-info"></div>
+                <div id="A21" class="building-info"></div>
+                <div id="TTTT_TV" class="building-info"></div>
+                <div id="A24" class="building-info"></div>
+                <div id="A25" class="building-info"></div>
+                <div id="A30" class="building-info"></div>
+                <div id="A27" class="building-info"></div>
+                <div id="TV" class="building-info"></div>
+                <div id="HTTN" class="building-info"></div>
+                <div id="SK" class="building-info"></div>
+            </div>
+        </div>
+        <script src="./src/Thang/2111886.js"></script>
+    </body>
+</html>

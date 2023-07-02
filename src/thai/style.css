@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:wght@100;200;300&family=Roboto+Mono:ital,wght@0,300;1,400&family=Slackside+One&display=swap");
+
+@font-face {
+    src: url(./NotoSansJP-VariableFont_wght.ttf);
+    font-family: my-font;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+body {
+    background: #eeece7;
+}
+
+/* ..................................................................... */
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8em;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    background-color: var(--clr);
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    opacity: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 100;
+}
+.logo {
+    position: relative;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-decoration: none;
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+
+}
+header a:hover {
+    color: #33cf25;
+}
+
+.Header_Poster {
+    padding-top: 70px;
+    background-image: linear-gradient(to bottom, rgba(112, 111, 111, 0.52), rgba(0, 0, 0, 0.73)), url(../img/Dai-hoc-Da-Lat-02.jpg);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+}
+
+.poster-left {
+    font-size: 70px;
+    color: #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+    font-family: my-font;
+    padding-top: 30px;
+}
+.poster-left h3 {
+    font-size: 100px;
+}
+
+.poster-left h3:hover {
+    color: rgb(28, 177, 107);
+    transition: 0.8s;
+    cursor: pointer;
+}
+.poster-right {
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding-top: 4%;
+    border-left: solid 1px;
+}
+
+.poster-right img {
+    width: 200px;
+    border-radius: 30%;
+    padding-bottom: 20px;
+}
+.poster-right p {
+    font-size: 20px;
+}
+
+/* .................Tin tức 2 phase.......................... */
+.container_TT {
+    width: 90%;
+    margin: auto;
+}
+.Header_DT {
+    padding-top: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.Header_DT h1 {
+    font-weight: 600;
+    color: rgb(28, 177, 107);
+    font-family: "my-font2";
+    font-weight: 700;
+}
+.Header_DT p {
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.item_DT {
+    padding: 20px;
+}
+.TinTuc,
+.TinTuc2 {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.content_TT {
+    max-width: 376px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+    border-radius: 0 0 4px 4px;
+    background-color: white;
+}
+
+.content_TT h3 a {
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+}
+
+.content_TT p {
+    padding-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+}
+.content_TT a:hover {
+    color: rgb(35, 190, 35);
+    transition: 0.4s;
+}
+.item_DT:hover .img_TT {
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.more_TT {
+    text-align: center;
+    display: none;
+}
+.more_TT a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(52, 122, 202);
+}
+
+@media (max-width: 1156px) {
+    .Header_Poster {
+        flex-direction: column;
+        height: 500px;
+    }
+    .poster-left {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+    .poster-left h3 {
+        font-size: 40px;
+    }
+    .poster-right img {
+        display: none;
+    }
+    .poster-left,
+    .poster-right {
+        width: 100%;
+    }
+    .poster-right {
+        border-left: none;
+        border-top: solid 1px;
+        padding-top: 20px;
+    }
+    .poster-right p {
+        font-size: 15px;
+    }
+    .TinTuc {
+        flex-direction: column;
+    }
+    .TinTuc2 {
+        display: none;
+    }
+
+    .img_TT img {
+        width: 100%;
+    }
+
+    .content_TT {
+        max-width: 100%;
+    }
+
+    .more_TT {
+        text-align: center;
+        display: block;
+        padding-bottom: 50px;
+    }
+}
+/* ..........................Công tác.............................. */
+@font-face {
+    font-family: my-font;
+    src: url(./Kiro\ Light.otf);
+}
+
+@font-face {
+    font-family: my-font2;
+    src: url(./Dosis-VariableFont_wght.ttf);
+}
+.CongTac {
+    padding-top: 30px;
+    display: flex;
+
+    margin: auto;
+    max-width: 80%;
+}
+.content_CT {
+    max-width: 622px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+    border-radius: 0 0 4px 4px;
+    background-color: white;
+}
+.content_CT h3 a {
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+    background-color: white;
+    padding-bottom: 30px;
+    border-radius: 0 0 4px 4px;
+    text-transform: uppercase;
+}
+.img_CT :hover img {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.left_CT {
+    padding-right: 20px;
+}
+
+.right_CT {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.item_CT {
+    display: flex;
+    padding-top: none;
+    padding-bottom: 10px;
+}
+
+.content_CTR,
+.content_CTR1,
+.content_CTR2,
+.content_CTR3 {
+    display: flex;
+
+    background-color: white;
+    height: 130px;
+
+    padding-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_CTR a,
+.content_CTR1 a,
+.content_CTR2 a,
+.content_CTR3 a {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+}
+
+.content_CT a:hover {
+    color: rgb(35, 190, 35);
+    transition: 0.4s;
+}
+
+.img_CTR:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.content_CTR a:hover {
+    color: rgb(35, 190, 35);
+    transition: 0.4s;
+}
+.content_CTR1 a:hover {
+    color: rgb(35, 190, 35);
+    transition: 0.4s;
+}
+.content_CTR2 a:hover {
+    color: rgb(35, 190, 35);
+    transition: 0.4s;
+}
+.content_CTR3 a:hover {
+    color: rgb(35, 190, 35);
+    transition: 0.4s;
+}
+.content_CTR4 a:hover {
+    color: rgb(35, 190, 35);
+    transition: 0.4s;
+}
+
+@media (max-width: 1156px) {
+    .right_CT {
+        display: none;
+    }
+    .CongTac {
+        flex-direction: column;
+    }
+    .img_CT a img {
+        max-width: 100%;
+    }
+    .left_CT {
+        padding-bottom: 30px;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .img_CT,
+    .content_CT {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content_CT {
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical;
+    }
+}
+.video_CT {
+    padding-top: 20px;
+    display: flex;
+}
+.videoCT {
+    width: 80%;
+
+    max-height: auto;
+}
+
+.mediaTT {
+    width: 20%;
+    background-color: black;
+    color: rgb(28, 177, 107);
+    flex-direction: column;
+    max-height: 100%;
+}
+
+.mediaTT h3 {
+    font-family: "my-font2";
+    font-weight: 400;
+    font-size: 65px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 30px;
+}
+
+.mediaTT p {
+    text-align: justify;
+    font-family: "my-font2";
+    font-size: 18px;
+    padding: 50px 30px 50px 30px;
+    line-height: 2.5;
+
+    font-style: italic;
+}
+
+.buttonTT {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.buttonTT a {
+    color: wheat;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    border: 2px solid #f1f1f1;
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 15px;
+}
+.buttonTT i {
+    color: white;
+}
+
+.buttonTT a:hover {
+    background-color: rgb(28, 177, 107);
+    color: #eeece7;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+.mediaTT2 {
+    display: none;
+}
+.TS_Footerr {
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+}
+.TS_Footerr a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.TS_Footerr a:hover {
+    background-color: #fff;
+    color: #000000;
+    padding: 5px 20px;
+    border-radius: 50px;
+    transition: 0.8s;
+}
+@media (max-width: 1795px) {
+    .video_CT {
+        flex-direction: column;
+    }
+
+    .mediaTT {
+        display: none;
+    }
+    .videoCT {
+        width: 100%;
+    }
+    .mediaTT2 {
+        display: block;
+
+        background-color: black;
+        color: rgb(28, 177, 107);
+        text-align: center;
+    }
+    .mediaTT2 h3 {
+        padding: 30px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: "my-font2";
+    }
+
+    .buttonTT a {
+        font-size: 15px;
+        padding: 10px 40px;
+        font-family: "my-font2";
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 991px) {
+    header nav a {
+        padding: 12px 0px;
+    }
+}

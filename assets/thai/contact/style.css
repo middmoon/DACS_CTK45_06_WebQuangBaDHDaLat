@@ -1,0 +1,658 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: my-font;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+@font-face
+{
+    src: url(./Dosis-VariableFont_wght.ttf);
+    font-family: my-font;
+}
+/* ============================================ */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    opacity: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 100;
+}
+.logo {
+    position: relative;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-decoration: none;
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+header a {
+    
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+
+}
+header a:hover {
+    color: #33cf25;
+}
+
+.Header_Poster{
+  padding-top: 50px;
+}
+/* ============================================ */
+    .TuyenSinh{
+
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./img_TS/IMG_8836.jpg);
+    background-size: cover;
+    
+    }
+
+    .TuyenSinh .TS_Content{
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .TuyenSinh .TS_Content h2{
+        font-size: 50px;
+        font-weight: 500;
+        color: #fff;  
+    }
+
+    .TuyenSinh .TS_Content p{
+        font-size: 25px;
+        font-weight: 400;
+        color: #fff;  
+    }
+
+    .TS_container
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .TS_container .contactInfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TS_container .contactInfo .TS_box{
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+
+    .TS_container .contactInfo .TS_box .icon{
+        min-width: 60px;
+        height: 60px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+
+    .TS_container .contactInfo .TS_box .text{
+        display: flex;
+        margin-left: 20px;
+        font-size: 20px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .TS_container .contactInfo .TS_box .text h3{
+        font-weight: 500;
+        color: rgb(56, 207, 169);
+    }
+
+    .contactForm{
+        width: 40%;
+        padding: 40px;
+        background: #fff;
+    }
+    .contactForm span{
+        padding: 5px 0;
+        font-size: 18px;
+        margin: 10px 0;
+        position: absolute;
+        left: 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+    }
+    .contactForm h2{
+        font-size: 30px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .contactForm .inputBox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+    .contactForm .inputBox input, .contactForm .inputBox textarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 18px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+
+    .contactForm input:focus ~ span,
+    .contactForm input:valid ~ span,
+    .contactForm textarea:focus ~ span,
+    .contactForm textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+    }
+
+    .contactForm input[type="submit"]
+    {
+        width: 100px;
+        background: #0caa90;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .contactForm input[type="submit"]:hover
+    {
+        background: black;
+        color: white;
+        transition: 0.9s;
+    
+    }
+
+.Poster_TS{
+    
+    background-image: url(./img_TS/poster.jpg);
+    padding-top: 40%;
+     position: relative;
+     background-size: cover;
+     background-position: center;
+}
+.poster_Header{
+    position: absolute;
+    bottom:20%;
+    right: 1%;
+}
+.HeaderPS_Content{
+    text-align: center;
+}
+.HeaderPS_Content h3{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 30px;
+   
+            }
+
+.headerPS_button{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: rgb(44, 160, 131);
+    
+    font-weight: bold;
+    border: 2px solid #f1f1f1;
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 15px;
+   
+}
+
+.headerPS_button:hover{
+    background-color:white ;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.uk-container{
+    padding: 40px;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.uk-left{
+    display: flex;
+    flex-direction: column;
+}
+.uk-right{
+    width: 50%;
+    padding-left: 10%;
+}
+
+.phase1, .phase2{
+    display: flex;
+    padding: 50px;
+}
+
+.phase1 h3,.phase2 h3{
+    text-align: center;
+    color: rgb(18, 150, 121);
+    font-size: 50px;
+}
+.phase1 p,.phase2 p{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.phase_Content{
+    width: 50%;
+    margin: 20px;
+}
+.uk-right img{
+
+width: 100%;
+height: 100%;
+border-radius: 10px;
+}
+
+
+.TS_W{
+    background: rgb(18, 150, 121);
+    color: white;
+}
+
+.W_header{
+    padding-top: 20px;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.W_header h3{
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.W_header p{
+    font-size: 20px;
+    opacity: 0.7;
+    padding-top: 10px;
+}
+.W_content{
+    display: flex;
+    padding-top: 60px;
+    width: 80%;
+   padding-bottom: 100px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.W_item{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.W_item i{
+  width: 100px;
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.W_item h3{
+    font-size: 25px;
+    text-align: center;
+   padding-bottom: 20px;
+}
+.W_item p{
+    text-align: justify;
+}
+
+.container_TT
+{
+  width: 90%;
+  margin: auto;
+}
+.Header_DT{
+  padding-top: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.Header_DT h1{
+font-size: 35px;
+color: rgb(28, 177, 107);
+font-family: "my-font";
+font-weight: 700;
+margin-bottom: 3px;
+}
+.Header_DT p{
+  opacity: 0.5  ;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.item_DT{
+  
+  box-shadow: 0px 0px 5px 5px #999999;
+    margin: 20px;
+}
+.TinTuc{
+  display: flex;
+ padding-top: 50px;
+ justify-content: center;
+}
+
+.content_TT
+{
+  max-width: 376px;
+  padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+    border-radius: 0 0 4px 4px;
+    background-color: white;
+   
+}
+
+.content_TT h3 a{
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2!important;
+    -webkit-box-orient: vertical;
+  font-size: 20px;
+ text-align: center;
+}
+
+.content_TT p{
+  padding-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+}
+.content_TT a:hover{
+  color: rgb(35, 190, 35);
+  transition: 0.4s;
+}
+.item_DT:hover .img_TT{
+  opacity: 0.3;
+  transition: 1s;
+}
+
+.more_TT{
+  text-align: center;
+  display: none;
+}
+.more_TT a{
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(52, 122, 202);
+}
+.TS_TT{
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+.img_TT img{
+    width: 100%;
+  }
+
+  .TS_Footer{padding: 10px;
+    text-align: center;
+    background-color: #000000;
+  }
+.TS_Footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.TS_Footer a:hover{
+    background-color: #fff;
+    color: #000000;
+  padding: 5px 20px;
+  border-radius: 50px;
+  transition: 0.8s;
+}
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 991px){
+    header{
+        display: none;
+    }
+    .TinTuc{
+        flex-direction: column;
+      }
+      .TinTuc2{
+        display: none;
+      }
+    
+      .img_TT img{
+        width: 100%;
+      }
+    
+      .content_TT{
+       max-width: 100%;
+      }
+    
+      .more_TT{
+        text-align: center;
+        display: block;
+        padding-bottom: 50px;
+      }
+    .HeaderPS_Content h3{
+        display: none;
+    }
+    .headerPS_button{
+        padding: 8px 30px;
+        font-size: 20px;
+    }
+    .poster_Header{
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .contact{
+        padding: 50px;
+    }
+    .TS_container{
+        flex-direction: column;
+    }
+    .TS_container .contactInfo{
+        margin-bottom: 40px;   
+    }
+    .TS_container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+    .TuyenSinh{
+        padding: 0;
+    }
+
+    .uk-container{
+        flex-direction: column;
+    }
+    .uk-left{
+        width: 100%;
+    }
+    .uk-right{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .W_content{
+        flex-direction: column;
+    }
+    .W_item{
+        width: 100%;
+    }
+
+    .alert{
+     display: none; 
+    }
+}
+
+@media (max-width:1626px) 
+{
+    .HeaderPS_Content h3{
+     font-size: 40px;
+    }
+}
+
+@media (max-width:1380px)
+{
+    .HeaderPS_Content h3{
+        font-size: 30px;
+       }
+
+      
+} 
+
+
+
+
+/* =================================================== */
+.alert{
+    background: rgb(52, 253, 153);
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right: 0;
+    bottom: -225%;
+    border-radius: 5px;
+    border-left: 8px solid rgb(31, 155, 93);
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.alert.showAlert{
+    opacity: 1;
+    pointer-events: auto;
+}
+.alert .fa-circle-exclamation{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    
+}
+/* ======================slide vào========================== */
+.alert.show{
+    animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+/* =======================slide ra=============================== */
+.alert.hide {
+   display: none;
+}
+@keyframes hide_slide{
+    0%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+/* ============================================================== */
+.alert .mrs{
+    padding: 0 20px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.alert .close-btn{
+    background-color:rgb(31, 155, 93) ;
+    
+    padding: 20px 18px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-51%);
+}
+.close-btn .fa-xmark:hover{
+    color: red;
+    cursor: pointer;
+}
+.close-btn .fa-xmark{
+    color: white;
+    font-size: 22px;
+    line-height: 40px;
+}
